@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: fruitsingress
+  namespace: orange
   annotations:
     ingress.kubernetes.io/rewrite-target: /
 spec:
@@ -10,5 +11,5 @@ spec:
         paths:
           - path: /orange
             backend:
-              serviceName: orangeservice.orange.cluster.svc.local
+              serviceName: orangeservice
               servicePort: 5678
