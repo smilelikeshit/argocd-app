@@ -5,11 +5,13 @@ metadata:
   namespace: orange
   annotations:
     ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: "nginx"
+
 spec:
   rules:
-    - host: "*"
-      http:
+    - http:
         paths:
-          - backend:
+          - path: /
+            backend:
               serviceName: orangeservice
               servicePort: 5678
