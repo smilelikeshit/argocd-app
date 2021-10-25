@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: orangeservice
-  namespace: orange
+  name: appleservice
+  namespace: apple
 spec:
   selector:
-    app: orange
+    app: apple
   ports:
     - port: 5678

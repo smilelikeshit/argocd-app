@@ -11,7 +11,11 @@ spec:
   rules:
     - http:
         paths:
-          - path: /
+          - path: /orange
             backend:
-              serviceName: orangeservice
+              serviceName: orangeservice.orange.svc.cluster.local
+              servicePort: 5678
+          - path: /apple
+            backend:
+              serviceName: appleservice.apple.svc.cluster.local
               servicePort: 5678

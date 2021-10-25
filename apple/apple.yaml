@@ -1,13 +1,13 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: orange-app
-  namespace: orange
+  name: apple-app
+  namespace: apple
   labels:
-    app: orange
+    app: apple
 spec:
   containers:
-    - name: orange-app
+    - name: apple-app
       image: hashicorp/http-echo
       args:
-        - "-text=orange"
+        - "-text=apple"
