@@ -7,9 +7,9 @@ metadata:
     ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - http:
+    - host: "*"
+      http:
         paths:
-          - path: /orange
-            backend:
+          - backend:
               serviceName: orangeservice
               servicePort: 5678
