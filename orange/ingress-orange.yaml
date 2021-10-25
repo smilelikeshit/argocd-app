@@ -13,9 +13,9 @@ spec:
         paths:
           - path: /orange
             backend:
-              serviceName: "orangeservice.orange.svc.cluster.local"
+              serviceName: orangeservice
               servicePort: 5678
           - path: /apple
             backend:
-              serviceName: "appleservice.apple.svc.cluster.local"
+              serviceName: appleservice
               servicePort: 5678
