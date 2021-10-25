@@ -10,5 +10,5 @@ spec:
         paths:
           - path: /orange
             backend:
-              serviceName: orange-service.orange.cluster.svc.local
+              serviceName: orangeservice.orange.cluster.svc.local
               servicePort: 5678

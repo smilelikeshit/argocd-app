@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: orange-service
+  name: orangeservice
 spec:
   selector:
     app: orange
