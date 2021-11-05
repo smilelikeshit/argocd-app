@@ -14,3 +14,5 @@ spec:
       envFrom:
       - secretRef:
           name: apple-secret
+      - configMapRef:
+          name: apple-configmap
